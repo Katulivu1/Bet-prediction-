@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Manage Predictions</h2>
+            <form id="prediction-form">
+                <input type="text" id="match" placeholder="Match" required>
+                <select id="sport">
+                    <option value="Football">Football</option>
+                    <option value="Basketball">Basketball</option>
+                </select>
+                <input type="text" id="prediction" placeholder="Prediction" required>
+                <select id="confidence">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button type="submit">Add Prediction</button>
+            </form>
+
+            <table id="admin-table">
+                <thead>
+                    <tr>
+                        <th>Match</th>
+                        <th>Sport</th>
+                        <th>Prediction</th>
+                        <th>Confidence</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bet Prediction Website</p>
+    </footer>
+
+    <script src="assets/js/admin.js"></script>
+</body>
+</html>
